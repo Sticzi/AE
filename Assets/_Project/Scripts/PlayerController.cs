@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Gravity Settings")]
     public float gravity = -9.81f;
+    public float fallMultiplier = 3;
     private Vector3 velocity;
 
     [Header("Head Bobbing")]
@@ -158,7 +159,8 @@ public class PlayerController : MonoBehaviour
     {
         if (controller.isGrounded && velocity.y < 0)
         {
-            velocity.y = -2f;
+            Debug.Log("siema");
+            velocity.y = (-fallMultiplier) * Time.deltaTime;
         }
 
         velocity.y += gravity * Time.deltaTime;

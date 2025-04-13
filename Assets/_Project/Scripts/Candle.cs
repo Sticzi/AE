@@ -24,10 +24,15 @@ public class Candle : Interactable
         if(!isLit)
         {
             foreach (Light candleLight in candleLights)
-        {
+            {
                 candleLight.intensity = 0;
-        }  
+            }  
             flameEffect.Stop();
+        }
+        else
+        {
+
+            FindAnyObjectByType<AudioManager>().Play("LitCandleLoop");
         }
 
     }
@@ -48,7 +53,9 @@ public class Candle : Interactable
 
     private void LightCandle()
     {
-        isLit = true;        
+        isLit = true; 
+        FindAnyObjectByType<AudioManager>().Play("FireCandle");
+        FindAnyObjectByType<AudioManager>().Play("LitCandleLoop");
         for (int i = 0; i < candleLights.Length; i++)
         {
             candleLights[i].DOIntensity(originalIntensity[i], 0.5f);
@@ -61,6 +68,8 @@ public class Candle : Interactable
     {
         isLit = false;
         OnExtinguished?.Invoke();
+        FindAnyObjectByType<AudioManager>().Play("BlowingOutCandle");
+        FindAnyObjectByType<AudioManager>().Stop("LitCandleLoop");
         foreach (Light candleLight in candleLights)
         {
             candleLight.DOIntensity(0f, 0.5f);

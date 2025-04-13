@@ -136,9 +136,10 @@ MonoBehaviour:
   jumpHeight: 1.5
   cameraHolderTransform: {fileID: 3189434647444209543}
   mainCameraTransform: {fileID: 8107269894409033363}
-  mouseSensitivity: 40
+  mouseSensitivity: 30
   maxLookAngle: 90
   gravity: -9.81
+  fallMultiplier: 3
   walkBobFrequency: 12
   walkBobAmplitude: 0.03
   sprintBobFrequency: 15
@@ -187,6 +188,11 @@ MonoBehaviour:
   interactableLayer:
     serializedVersion: 2
     m_Bits: 64
+  tooltipE: {fileID: 0}
+  tooltipR: {fileID: 0}
+  tooltipHandOccupied: {fileID: 0}
+  tooltipDrop: {fileID: 0}
+  InteractionTextField: {fileID: 0}
   dropSurfaceLayer:
     serializedVersion: 2
     m_Bits: 256
