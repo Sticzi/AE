@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5495470836168899484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3357158538363568442}
+  - component: {fileID: 570102373690811180}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3357158538363568442
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5495470836168899484}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.9941826, y: 7.339838, z: -16.21386}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &570102373690811180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5495470836168899484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dec363549356b4cbee2dc6f0170069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetSceneIndex: 0
+  mixerGroup: {fileID: 24300002, guid: 11cf099adbcecd147ae76b5b49a6fa75, type: 2}
+  sounds:
+  - name: levelMusic
+    clips:
+    - {fileID: 8300000, guid: 0e970d779244ca04fb8df34bd1bd420d, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    startTime: 0
+    duration: 0
+    loop: 1
+    mixerGroup: {fileID: -8487123691645989238, guid: 11cf099adbcecd147ae76b5b49a6fa75, type: 2}
+    source: {fileID: 0}
+  - name: playerStep
+    clips:
+    - {fileID: 8300000, guid: 3286e1741ae67a648b0654400b44a041, type: 3}
+    - {fileID: 8300000, guid: 9b4bde673b59ad84bbb1b271500b5b80, type: 3}
+    - {fileID: 8300000, guid: 509c087c2d009da47bf4ad3ad799dd7a, type: 3}
+    - {fileID: 8300000, guid: d2279956907f2174b8d7329e379105cd, type: 3}
+    volume: 1
+    volumeVariance: 0.01
+    pitch: 1
+    pitchVariance: 0.1
+    startTime: 0
+    duration: 0
+    loop: 0
+    mixerGroup: {fileID: -9069639640411763339, guid: 11cf099adbcecd147ae76b5b49a6fa75, type: 2}
+    source: {fileID: 0}
+  - name: playerStepSprint
+    clips:
+    - {fileID: 8300000, guid: 3286e1741ae67a648b0654400b44a041, type: 3}
+    - {fileID: 8300000, guid: 9b4bde673b59ad84bbb1b271500b5b80, type: 3}
+    - {fileID: 8300000, guid: 509c087c2d009da47bf4ad3ad799dd7a, type: 3}
+    - {fileID: 8300000, guid: d2279956907f2174b8d7329e379105cd, type: 3}
+    volume: 1
+    volumeVariance: 0.02
+    pitch: 1
+    pitchVariance: 0.1
+    startTime: 0
+    duration: 0
+    loop: 0
+    mixerGroup: {fileID: -9069639640411763339, guid: 11cf099adbcecd147ae76b5b49a6fa75, type: 2}
+    source: {fileID: 0}
