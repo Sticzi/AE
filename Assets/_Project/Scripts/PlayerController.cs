@@ -158,7 +158,6 @@ public class PlayerController : MonoBehaviour
     {
         if (controller.isGrounded && velocity.y < 0)
         {
-            Debug.Log("siema");
             velocity.y = -2f;
         }
 

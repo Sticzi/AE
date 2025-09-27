@@ -343,6 +343,14 @@ PrefabInstance:
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7787522055022072616, guid: d1e27cea4d5c5f24c98786711611c607, type: 3}
+      propertyPath: m_AreaSize.x
+      value: 1.5247114
+      objectReference: {fileID: 0}
+    - target: {fileID: 7787522055022072616, guid: d1e27cea4d5c5f24c98786711611c607, type: 3}
+      propertyPath: m_Lightmapping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7787522055022072616, guid: d1e27cea4d5c5f24c98786711611c607, type: 3}
       propertyPath: m_Shadows.m_Type
       value: 1
       objectReference: {fileID: 0}
